@@ -16,6 +16,8 @@ body{
 }
 
 header{
+    overflow: hidden;
+    position: relative;
     height: 100vh;
     /* box-shadow: inset 0px 0px 250px 20px #000000BF; */
     box-shadow: 0px 0px 250px 123px #000000BF inset;
@@ -37,8 +39,9 @@ header section {
     opacity: 0.6;
     z-index: -5;
 }
-header nav{
-    margin: 30px 12px;
+header main,nav{
+    margin: 30px 0;
+    padding:0  24px;
     z-index: 10;
     position:absolute;
     top: 0;
@@ -73,3 +76,88 @@ nav .nav-links{
     justify-content: space-around;
     align-items: center;
 }
+.item-link{
+    opacity: 0.5;
+    transition: 0.5s;
+    animation: ease-in-out;
+}
+.item-link:hover{
+    opacity: 1;
+}
+.text-section{
+    z-index: 12;
+    position: absolute;
+    left: 200px;
+    top: 300px;
+}
+.text-section h2{
+    font-size: 52px;
+}
+.text-section h1{
+    font-size: 84px;
+    font: 900;
+    font-weight: bolder;
+}
+.md{
+    width: 450px;
+    height: 450px;
+}
+.sm{
+    width: 300px;
+    height: 300px;
+}
+.img{
+    clip-path: polygon(0 23%, 50% 0, 100% 23%, 100% 76%, 50% 100%, 0 75%);
+    background-size: cover;
+}
+.text-box{
+    background-color: #EAA913;
+    position: absolute;
+    left:900px;
+    top: 440px;
+    z-index: 10;
+    /* text-align: center;  */
+}
+.text-box span{
+    text-align: left;
+    color: #02293F;
+    font-size: 32px;
+    position: absolute;
+    left: 140px;
+    top: 180px;
+    
+}
+
+.img-1{
+    position: absolute;
+    left: 600px;
+    top: 190px;
+    color: black;
+}
+.img-2{
+    position: absolute;
+    left: 1340px;
+    top: -165px;
+}
+.img-3{
+    position: absolute;
+    left: 970px;
+    top: 10px;
+}
+.img-4{
+    position: absolute;
+    left:1180px;
+    top: 250px;
+}
+.img-5{
+    position: absolute;
+    left:600px;
+    top: 650px;
+}
+.img-6{
+    position: absolute;
+    left: 1270px;
+    top: 500px;
+}
+
+
